@@ -35,7 +35,9 @@
             this.tbWord = new System.Windows.Forms.TextBox();
             this.tbWorth = new System.Windows.Forms.TextBox();
             this.btnShowResult = new System.Windows.Forms.Button();
+            this.tbResult = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -55,6 +57,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tbResult);
             this.groupBox2.Location = new System.Drawing.Point(360, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(428, 426);
@@ -104,6 +107,15 @@
             this.btnShowResult.Text = "결과보기";
             this.btnShowResult.UseVisualStyleBackColor = true;
             // 
+            // tbResult
+            // 
+            this.tbResult.Location = new System.Drawing.Point(20, 27);
+            this.tbResult.Multiline = true;
+            this.tbResult.Name = "tbResult";
+            this.tbResult.ReadOnly = true;
+            this.tbResult.Size = new System.Drawing.Size(388, 379);
+            this.tbResult.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -117,6 +129,8 @@
             this.Text = " ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -130,6 +144,7 @@
         private System.Windows.Forms.Button btnShowResult;
         private System.Windows.Forms.TextBox tbWorth;
         private System.Windows.Forms.TextBox tbWord;
+        private System.Windows.Forms.TextBox tbResult;
     }
 }
 
