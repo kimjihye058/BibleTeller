@@ -41,7 +41,7 @@ namespace FortuneTeller
             }
             else
             {
-                form = new FormHistory(this);
+                form = new FormHistory(this); 
                 form.Show();
             }
 
