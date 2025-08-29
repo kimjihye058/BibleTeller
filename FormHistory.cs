@@ -22,12 +22,16 @@ namespace FortuneTeller
             UpdateHistory();
         }
 
-        private void UpdateHistory()
+        public void UpdateHistory()
         {
+
             LoadHistory();
+
             lbHistory.Items.Clear();
+
             lbHistory.Items.AddRange(history.ToArray());
-        }
+
+        }
 
         private void LoadHistory()
         {

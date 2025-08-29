@@ -97,6 +97,11 @@ namespace FortuneTeller
             string message = $"{name}님이 중요하게 생각하는 가치는 {worth}입니다!\n\n 하나님께서 {name}님께 해주시는 성경 말씀:\n {result}";
             tbResult.Text = message;
             SaveHistory($"{name}님이 중요하게 생각하는 가치는 {worth}");
+            FormHistory form = Application.OpenForms["FormHistory"] as FormHistory;
+            if (form != null)
+            {
+                form.UpdateHistory();
+            }
         }
 
         
