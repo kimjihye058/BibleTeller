@@ -31,7 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnShowResult = new System.Windows.Forms.Button();
             this.tbWorth = new System.Windows.Forms.TextBox();
-            this.tbWord = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -51,7 +51,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnShowResult);
             this.groupBox1.Controls.Add(this.tbWorth);
-            this.groupBox1.Controls.Add(this.tbWord);
+            this.groupBox1.Controls.Add(this.tbName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 39);
@@ -79,12 +79,12 @@
             this.tbWorth.Size = new System.Drawing.Size(100, 21);
             this.tbWorth.TabIndex = 3;
             // 
-            // tbWord
+            // tbName
             // 
-            this.tbWord.Location = new System.Drawing.Point(20, 74);
-            this.tbWord.Name = "tbWord";
-            this.tbWord.Size = new System.Drawing.Size(100, 21);
-            this.tbWord.TabIndex = 2;
+            this.tbName.Location = new System.Drawing.Point(20, 58);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(100, 21);
+            this.tbName.TabIndex = 2;
             // 
             // label2
             // 
@@ -100,9 +100,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 24);
+            this.label1.Size = new System.Drawing.Size(121, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "본인을 한 단어로 표현한다면? \r\n(예: 용감함, 신중함, 창의적 등)";
+            this.label1.Text = "이름을 작성해주세요.";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox2
@@ -206,7 +206,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnShowResult;
         private System.Windows.Forms.TextBox tbWorth;
-        private System.Windows.Forms.TextBox tbWord;
+        private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.TextBox tbResult;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 파일ToolStripMenuItem;
