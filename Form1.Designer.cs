@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbWord = new System.Windows.Forms.TextBox();
-            this.tbWorth = new System.Windows.Forms.TextBox();
             this.btnShowResult = new System.Windows.Forms.Button();
+            this.tbWorth = new System.Windows.Forms.TextBox();
+            this.tbWord = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbResult = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.상담내역불러오기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.포츈텔러정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -62,15 +62,38 @@
             this.groupBox1.Text = "사용자 입력";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // groupBox2
+            // btnShowResult
             // 
-            this.groupBox2.Controls.Add(this.tbResult);
-            this.groupBox2.Location = new System.Drawing.Point(360, 39);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(428, 399);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "결과";
+            this.btnShowResult.Location = new System.Drawing.Point(52, 203);
+            this.btnShowResult.Name = "btnShowResult";
+            this.btnShowResult.Size = new System.Drawing.Size(237, 44);
+            this.btnShowResult.TabIndex = 4;
+            this.btnShowResult.Text = "결과보기";
+            this.btnShowResult.UseVisualStyleBackColor = true;
+            this.btnShowResult.Click += new System.EventHandler(this.btnShowResult_Click);
+            // 
+            // tbWorth
+            // 
+            this.tbWorth.Location = new System.Drawing.Point(20, 162);
+            this.tbWorth.Name = "tbWorth";
+            this.tbWorth.Size = new System.Drawing.Size(100, 21);
+            this.tbWorth.TabIndex = 3;
+            // 
+            // tbWord
+            // 
+            this.tbWord.Location = new System.Drawing.Point(20, 74);
+            this.tbWord.Name = "tbWord";
+            this.tbWord.Size = new System.Drawing.Size(100, 21);
+            this.tbWord.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(287, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "당신이 가장 중요하게 생각하는 가치가 무엇인가요? \r\n(예: 사랑, 믿음, 성공 등)";
             // 
             // label1
             // 
@@ -82,37 +105,15 @@
             this.label1.Text = "본인을 한 단어로 표현한다면? \r\n(예: 용감함, 신중함, 창의적 등)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // groupBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(287, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "당신이 가장 중요하게 생각하는 가치가 무엇인가요? \r\n(예: 사랑, 믿음, 성공 등)";
-            // 
-            // tbWord
-            // 
-            this.tbWord.Location = new System.Drawing.Point(20, 74);
-            this.tbWord.Name = "tbWord";
-            this.tbWord.Size = new System.Drawing.Size(100, 21);
-            this.tbWord.TabIndex = 2;
-            // 
-            // tbWorth
-            // 
-            this.tbWorth.Location = new System.Drawing.Point(20, 162);
-            this.tbWorth.Name = "tbWorth";
-            this.tbWorth.Size = new System.Drawing.Size(100, 21);
-            this.tbWorth.TabIndex = 3;
-            // 
-            // btnShowResult
-            // 
-            this.btnShowResult.Location = new System.Drawing.Point(52, 203);
-            this.btnShowResult.Name = "btnShowResult";
-            this.btnShowResult.Size = new System.Drawing.Size(237, 44);
-            this.btnShowResult.TabIndex = 4;
-            this.btnShowResult.Text = "결과보기";
-            this.btnShowResult.UseVisualStyleBackColor = true;
+            this.groupBox2.Controls.Add(this.tbResult);
+            this.groupBox2.Location = new System.Drawing.Point(360, 39);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(428, 399);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "결과";
             // 
             // tbResult
             // 
@@ -143,6 +144,20 @@
             this.파일ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.파일ToolStripMenuItem.Text = "파일";
             // 
+            // 상담내역불러오기ToolStripMenuItem
+            // 
+            this.상담내역불러오기ToolStripMenuItem.Name = "상담내역불러오기ToolStripMenuItem";
+            this.상담내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.상담내역불러오기ToolStripMenuItem.Text = "이전 내역 불러오기";
+            this.상담내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.상담내역불러오기ToolStripMenuItem_Click);
+            // 
+            // 끝내기ToolStripMenuItem
+            // 
+            this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.끝내기ToolStripMenuItem.Text = "끝내기";
+            this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
+            // 
             // 도움말ToolStripMenuItem
             // 
             this.도움말ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -151,24 +166,10 @@
             this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.도움말ToolStripMenuItem.Text = "도움말";
             // 
-            // 상담내역불러오기ToolStripMenuItem
-            // 
-            this.상담내역불러오기ToolStripMenuItem.Name = "상담내역불러오기ToolStripMenuItem";
-            this.상담내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.상담내역불러오기ToolStripMenuItem.Text = "이전 내역 불러오기";
-            this.상담내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.상담내역불러오기ToolStripMenuItem_Click);
-            // 
-            // 끝내기ToolStripMenuItem
-            // 
-            this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.끝내기ToolStripMenuItem.Text = "끝내기";
-            this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
-            // 
             // 포츈텔러정보ToolStripMenuItem
             // 
             this.포츈텔러정보ToolStripMenuItem.Name = "포츈텔러정보ToolStripMenuItem";
-            this.포츈텔러정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.포츈텔러정보ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.포츈텔러정보ToolStripMenuItem.Text = "포츈텔러 정보";
             this.포츈텔러정보ToolStripMenuItem.Click += new System.EventHandler(this.포츈텔러정보ToolStripMenuItem_Click);
             // 
