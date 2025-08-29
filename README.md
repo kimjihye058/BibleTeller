@@ -1,1 +1,1 @@
-# FortuneTeller
+# BibleTeller
