@@ -58,15 +58,16 @@
             this.btnRefresh.Text = "내역 새로고침";
             this.btnRefresh.UseVisualStyleBackColor = true;
             // 
-            // FromHistory
+            // FormHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 450);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lbHistory);
-            this.Name = "FromHistory";
+            this.Name = "FormHistory";
             this.Text = "내역보기";
+            this.Load += new System.EventHandler(this.FormHistory_Load);
             this.ResumeLayout(false);
 
         }
