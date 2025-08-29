@@ -85,6 +85,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(100, 21);
             this.tbName.TabIndex = 2;
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // label2
             // 

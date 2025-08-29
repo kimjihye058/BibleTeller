@@ -99,6 +99,7 @@ namespace FortuneTeller
             SaveHistory($"{name}님이 중요하게 생각하는 가치는 {worth}");
         }
 
+        
         private void SaveHistory(string history)
         {
             try
@@ -114,6 +115,22 @@ namespace FortuneTeller
             {
                 MessageBox.Show($"알 수 없는 오류가 발생했습니다. \n{ex.Message}", "알 수 없는 오류!");
             }   
+        }
+
+        internal void LoadHistory(string history)
+        {
+            string name = history.Split('|')[0].Split(' ')[0];
+            tbName.Text = name;
+            string worth = history.Split('|')[1].Split(' ')[1];
+            tbWorth.Text = worth;
+            string result = history.Split('|')[1];
+            string message = history.Split('|')[2];
+            tbResult.Text = message;
+        }
+
+        private void tbName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
